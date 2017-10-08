@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get("/", "WelcomeController");
+
+Route::get("/skincare/", "SkincareController@index");
+
+Route::get("/skincare/match-products/", "SkincareController@matchProducts");
