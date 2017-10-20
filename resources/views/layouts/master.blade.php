@@ -16,6 +16,14 @@
 	<header>
 		<!--Logo later-->
 		<h1>Skincare Finder</h1>
+
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/skincare">Find Skincare</a></li>
+				<li><a href="/skincare/match-products">Products</a></li>
+			</ul>
+		</nav>
 	</header>
 
 	<section>

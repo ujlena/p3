@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
+@extends("layouts.master")
+
+@section("title")
+    Find your skincare products
+@endsection
+
+
+@push("head")
+    <!--<link href="/css/skincare.css" type="text/css rel="stylesheet">-->
+@endpush
+
+
+@section("content")
     <h1>Welcome to Skincare Finder!</h1>
-</body>
-</html>
+	<p>You can look for skincare products what you have been looking for 
+		<a href="/skincare">Go to Finder</a>
+	</p>
+@endsection
+
