@@ -22,4 +22,6 @@ Route::get("/", "WelcomeController");
 
 Route::get("/skincare/", "SkincareController@index");
 
+Route::get("/show-all/", "SkincareController@showAll");
+
 Route::get("/skincare/match-products/", "SkincareController@matchProducts");

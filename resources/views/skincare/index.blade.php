@@ -13,7 +13,7 @@
 @section("content")
         <h1>Find your skincare products</h1>
 
-		<form>
+		<form method="GET" action="/skincare/match-products">
 			<span>Choose category</span>
 			<select name="producttypes">
 				<option value="cleansers">Cleansers</option>
