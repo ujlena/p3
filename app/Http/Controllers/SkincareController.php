@@ -33,7 +33,13 @@ class SkincareController extends Controller
     {
     	# "Filter matching values to give users result."
 
-        #LOGIC for filtering matching values
+        # Validation
+        $this->validate($request, [
+            "skintype" => "required",
+            "pricerange" => "numeric|min:10|max:100"
+        ]);
+
+        # LOGIC for filtering matching values
         $matchingResultArr = []; # store result
 
         #user inputs

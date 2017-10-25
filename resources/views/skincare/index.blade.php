@@ -25,7 +25,7 @@
 			<span>*Select your skin type</span>
 			<!--input type: radio-->
 			<p>
-				<input type="radio" id="dry" name="skintype" value="dry">
+				<input type="radio" id="dry" name="skintype" value="dry" checked>
 				<label for="dry">Dry</label>
 			</p>
 			<p>	
@@ -44,13 +44,21 @@
 			<!--input type: number-->
 			<p>
 				<span>*Price Range (10~100) $</span>
-				<input type="number" name="pricerange" min="10" max="100" value="50">
+				<input type="number" name="pricerange" min="10" max="100" value="{{ old('pricerange') }}">
 			</p>
 			<p>
 				<input type="submit" class="btn" value="Find one for me">
 			</p>			
 
 		</form>
+
+		@if(count($errors) > 0) 
+			<ul>
+				@foreach ($errors->all() as $error)
+					<li>{{ $error }}</li>
+				@endforeach
+			</ul>
+		@endif
 
      	
 @endsection
