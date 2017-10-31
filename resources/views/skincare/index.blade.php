@@ -15,8 +15,9 @@
 
 	<form method="GET" action="/skincare/match-products">
 		<p id="label_required">* Required</p>
-		<p>* Choose category
-			<select name="producttypes">
+		<p>
+			<label for="producttypes">* Choose category</label>
+			<select name="producttypes" id="producttypes">
 				<option value="cleansers" {{ (old("producttypes") == "cleansers") ? "SELECTED" : "" }}>Cleansers</option>
 				<option value="toners" {{ (old("producttypes") == "toners") ? "SELECTED" : "" }}>Toners</option>
 				<option value="moisturizers" {{ (old("producttypes") == "moisturizers") ? "SELECTED" : "" }}>Moisturizers</option>
@@ -43,8 +44,8 @@
 		</p>
 
 		<p>
-			* Price Range (10~100) $
-			<input type="number" name="pricerange" min="10" max="100" value="{{ old("pricerange") }}">
+			<label for="pricerange">* Price Range (10~100) $</label>
+			<input type="number" name="pricerange" id="pricerange" min="10" max="100" value="{{ old("pricerange") }}">
 		</p>
 		<p>
 			<input type="submit" class="btn" value="Find one for me">
