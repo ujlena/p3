@@ -15,8 +15,7 @@
 
 	<form method="GET" action="/skincare/match-products">
 		<p id="label_required">* Required</p>
-		<p>
-			<label for="producttypes">*Choose category</label>
+		<p>* Choose category
 			<select name="producttypes">
 				<option value="cleansers" {{ (old("producttypes") == "cleansers") ? "SELECTED" : "" }}>Cleansers</option>
 				<option value="toners" {{ (old("producttypes") == "toners") ? "SELECTED" : "" }}>Toners</option>
@@ -25,7 +24,7 @@
 			</select>
 		</p>
 
-		<p>*Select your skin type</p>
+		<p>* Select your skin type</p>
 		<p>
 			<input type="radio" id="dry" name="skintype" value="dry" {{ (old("skintype") == "dry") ? "CHECKED" : "" }}>
 			<label for="dry">Dry</label>
@@ -44,7 +43,7 @@
 		</p>
 
 		<p>
-			<label for="pricerange">*Price Range (10~100) $</label>
+			* Price Range (10~100) $
 			<input type="number" name="pricerange" min="10" max="100" value="{{ old("pricerange") }}">
 		</p>
 		<p>

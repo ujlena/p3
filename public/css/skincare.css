@@ -113,6 +113,7 @@ form p#label_required {
 	text-decoration: underline;
 }
 
+
 ul#errormsg {
 	list-style: none;
 }
@@ -123,9 +124,10 @@ ul#errormsg li {
 }
 
 .btn {
-	color: #fff;
+	color: green;
+	font-weight: bold;
 	padding: .5em 1em;
-	background-color: orange;
+	background-color: #eee;
 }
 
 footer {
