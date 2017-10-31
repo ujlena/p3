@@ -11,7 +11,7 @@
 
 
 @section("content")
-    <h1>Find your skincare products</h1>
+    <p class="pagetitle">Find your skincare products</p>
 
 	<form method="GET" action="/skincare/match-products">
 		<p id="label_required">* Required</p>

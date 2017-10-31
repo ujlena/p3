@@ -7,7 +7,6 @@
 
 	<meta charset="utf-8">
     <link href="/css/skincare.css" type="text/css" rel="stylesheet">
-
     @stack("head")
 
 </head>

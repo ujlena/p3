@@ -6,14 +6,13 @@
 
 
 @push("head")
-    <!--<link href="/css/skincare.css" type="text/css rel="stylesheet">-->
+    
 @endpush
 
 
 @section("content")
-    <h1>Welcome to Skincare Finder!</h1>
-	<p>You can look for skincare products what you have been looking for 
-		<a href="/skincare">Go to Finder</a>
-	</p>
+    <p class="pagetitle">Welcome to Skincare Finder!</p>
+	<a href="/skincare" id="mainimglink"><img src="images/mainimg.jpg" alt="main" id="mainimg"></a>
+	
 @endsection
 

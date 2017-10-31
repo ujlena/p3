@@ -11,7 +11,7 @@
 @endpush
 
 @section("content")
-    <h1>Your Matching Result: </h1>
+    <p class="pagetitle">Your Matching Result: </p>
     
     @if(count($matchingResult) == 0)
         <p id="noresult">We're sorry. No matches found. <a href="/skincare">Go back to finder</a></p>

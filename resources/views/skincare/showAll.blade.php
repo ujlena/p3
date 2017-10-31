@@ -11,7 +11,7 @@
 @endpush
 
 @section("content")
-    <h1>See All Skincare</h1>
+    <p class="pagetitle">See All Skincare</p>
     		@foreach($products as $ptype => $product) 
             	<h2>{{ $ptype }}</h2>
             	@foreach($product as $index => $item)

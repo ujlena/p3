@@ -50,9 +50,11 @@ section {
 	border: 4px double #000;
 }
 
-section h1 {
+section p.pagetitle {
 	padding: 1em;
 	border-bottom: 3px double #000;
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 section h2 {
@@ -128,6 +130,16 @@ ul#errormsg li {
 	font-weight: bold;
 	padding: .5em 1em;
 	background-color: #eee;
+}
+
+img#mainimg {
+	width: 100%;
+	opacity: 0.5;
+	padding-top: 0;
+}
+
+img#mainimg:hover {
+	opacity: 1;
 }
 
 footer {
