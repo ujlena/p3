@@ -6,11 +6,126 @@ html {
 	box-sizing: inherit;
 }
 
+header h1 {
+	text-shadow: 5px 2px #eee;
+}
+
+nav {
+	margin-top: 2em;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	border: 1px solid orange;
+	display: inline-block;
+	padding: .1em 1em;
+	margin: 0 1em 2em 0;
+	background-color: gray;
+}
+
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	
+}
+
+nav ul li a:hover {
+	
+	color: orange;
+}
+
 body {
 	background-color: #fff;
 	font-family: Lucida Console, Courier, monospace;
-	width: 70%;
+	width: 80%;
 	margin: 2em;
+}
+
+section {
+	background-color: #fff5e6;
+	border: 4px double #000;
+}
+
+section h1 {
+	padding: 1em;
+	border-bottom: 3px double #000;
+}
+
+section h2 {
+	padding-left: 1.2em;
+	background-color: orange;
+}
+
+section h2::first-letter { /* producttypes: cleanser, etc. */
+	text-transform: uppercase;
+}
+
+section p {
+	padding-left: 2em;
+}
+
+section h3 {
+	margin: 0 1em 0 1.5em;
+}
+
+section h3 a {
+	color: gray;
+	text-decoration: none;
+	background-color: #eee;
+}
+
+section h3 a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+section span a { /* find yours */
+	color: orange;
+	font-weight: bold;
+	text-decoration: none;
+	border: 3px outset orange;
+	padding: .5em;
+}
+
+section span a:hover {
+	text-decoration: underline;
+	color: #000;
+	font-weight: bold;
+}
+
+section span {
+	margin: 2em;
+}
+
+form {
+	border: 3px dotted green;
+	margin: 1em;
+}
+
+form p#label_required {
+	color: red;
+	text-align: right;
+	padding-right: 1em;
+	text-decoration: underline;
+}
+
+ul#errormsg {
+	list-style: none;
+}
+
+ul#errormsg li {
+	margin-bottom: .2em;
+	color: red;
+}
+
+.btn {
+	color: #fff;
+	padding: .5em 1em;
+	background-color: orange;
 }
 
 footer {

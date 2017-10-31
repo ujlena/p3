@@ -19,9 +19,7 @@ class SkincareController extends Controller
         # "Show all skincare products from JSON file."
 
         $jsonPath = database_path("products.json");
-        
         $productsJson = file_get_contents($jsonPath);
-        
         $products = json_decode($productsJson);
 
         return view("skincare.showAll")->with([
@@ -35,9 +33,11 @@ class SkincareController extends Controller
 
         # Validation
         $this->validate($request, [
+            "producttypes" => "required",
             "skintype" => "required",
             "pricerange" => "numeric|min:10|max:100"
         ]);
+
 
         # LOGIC for filtering matching values
         $matchingResultArr = []; # store result
@@ -59,8 +59,8 @@ class SkincareController extends Controller
                     }
                 } #end foreach
             } #end if
-
         } #end foreach
+
         return view("skincare.matchProducts")->with([
             "matchingResult" => $matchingResultArr
         ]);
